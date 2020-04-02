@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "jade": "*",
-    "express": "~3.1.0",
+    "express": "~4.17.1",
     "connect-form": "*"
   },
   "author": {
