@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div.container
+    div.row
+      div.span12
+        form(method='post', enctype='multipart/form-data')
+          legend eGED File Upload
+              label(for='perimetre') Perim&egrave;tre : 
+               input(id='perimetre',type='text',value='', name='perimetre')
+          p
+          input(type='file', name='myFile', id='myFile')
+          p
+          div.form-actions
+            input.btn.btn-primary(type='submit', value='Envoyer !')
+    hr
+    div.row
+      div.span12
+        div.progress.progress-striped.active.hide
+          div.bar(style='width: 0%')
+    div.row
+      div.span12
+        div.alert.hide
+          button.close(type='button', data-dismiss='alert') x
+          span
+            strong.message

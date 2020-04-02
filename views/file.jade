@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div.container
+    div.row
+      div.hero-unit
+        p Your document is ready for download
+        span.label #{id}
+        br
+        span(class="label label-important") #{perimetre}
+        br
+        span(class="label label-success") #{path}
+        p
+        a(href="/download/" + id, class="btn") Get it! 
+        
+        
+      
